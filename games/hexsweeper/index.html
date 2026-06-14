@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hex Sweeper - HMI Games</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/x-icon" href="icon.ico">
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a href="/" class="d-flex align-center gap-3">
+        <img className="ma-3 ml-4 mr-4" style="height: 40px;" src="/static/images/hmi-icon.svg" />
+        <h1>HMI Games</h1>
+      </a>
+      <a href="/">← Back</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="d-flex justify-between align-end">
+      <h2>Hex Sweeper</h2>
+      <p>
+        <a onclick="document.querySelector('#game').requestFullscreen()">⛶ Fullscreen</a>
+      </p>
+    </div>
+
+    <div class="game-frame">
+      <iframe id="game" src="build" title="Game" allow="fullscreen"></iframe>
+    </div>
+
+    <div class="below-game">
+      <div>
+        <p>The classic Minesweeper, but now on a hexagonal grid.</p>
+      </div>
+      <aside class="ad-box tall"></aside>
+    </div>
+  </main>
+
+  <footer class="container footer">
+    <div class="ad-box small"></div>
+    <p>© 2026 HMI Studios</p>
+  </footer>
+</body>
+
+</html>
