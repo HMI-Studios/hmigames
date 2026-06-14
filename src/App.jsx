@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './views/Layout.jsx';
 import NoPage from './views/NoPage.jsx';
 import Home from './views/Home.jsx';
+import Play from './views/Play.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class App extends React.Component {
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
+              <Route path="/play/:gameShortname" element={<Play />} />
               <Route path="*" element={<NoPage />} />
             </Route>
           </Routes>

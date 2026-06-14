@@ -4,6 +4,8 @@
     "shortname": "hexsweeper",
     "categories": ["strategy"],
     "description": "The classic Minesweeper, but now on a hexagonal grid.",
+    "instructions": "The classic Minesweeper, but now on a hexagonal grid.",
+    "icon": "/static/images/icons/hexsweeper.ico",
     "cover": "https://img.itch.zone/aW1nLzE0OTYwNzEwLnBuZw==/315x250%23c/YyJlkq.png",
     "src": "https://itch.io/embed-upload/15004480?color=333333"
   },
@@ -12,6 +14,8 @@
     "shortname": "spacewar",
     "categories": ["action"],
     "description": "The classic \"Spacewar!\" space shooter game.",
+    "instructions": "Godot implementation of the classic \"Spacewar!\" space shooter game. It can be played either against another player on the same computer, or against a simple bot player. It can be played in the browser, or downloaded as executables for Windows and Linux.\n\nPlayer 1 controls:\nW to move forward, A & D to turn, S to shoot.\n\nPlayer 2 controls:\nI to move forward, J & L to turn, K to shoot.",
+    "icon": "/static/images/icons/spacewar.ico",
     "cover": "https://img.itch.zone/aW1nLzE0NzU5NTU3LnBuZw==/315x250%23c/4LasY4.png",
     "src": "https://itch.io/embed-upload/9553079?color=333333"
   }
