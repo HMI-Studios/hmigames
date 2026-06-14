@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Hex Sweeper",
+    "shortname": "hexsweeper",
+    "categories": ["strategy"],
+    "description": "The classic Minesweeper, but now on a hexagonal grid.",
+    "cover": "https://img.itch.zone/aW1nLzE0OTYwNzEwLnBuZw==/315x250%23c/YyJlkq.png",
+    "src": "https://itch.io/embed-upload/15004480?color=333333"
+  },
+  {
+    "title": "Space War",
+    "shortname": "spacewar",
+    "categories": ["action"],
+    "description": "The classic \"Spacewar!\" space shooter game.",
+    "cover": "https://img.itch.zone/aW1nLzE0NzU5NTU3LnBuZw==/315x250%23c/4LasY4.png",
+    "src": "https://itch.io/embed-upload/9553079?color=333333"
+  }
+]
