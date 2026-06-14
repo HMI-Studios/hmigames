@@ -7,6 +7,7 @@
   <title>HMI Games</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="/categoryFilter.js"></script>
 </head>
 
 <body>
@@ -29,22 +30,27 @@
       <h2>Play free browser games</h2>
       <p>Responsive arcade website with categories, game pages, iframe embeds and unobtrusive ad slots.</p>
     </div>
-    <aside class="ad-box">Google Ad Space</aside>
+    <aside class="ad-box"></aside>
   </section>
 
   <section id="categories" class="container">
     <h2>Categories</h2>
     <div class="chips">
-      <span>Action</span><span>Puzzle</span><span>Racing</span>
-      <span>Sports</span><span>Retro</span><span>Adventure</span>
+      <span data-action onclick="filterCategory('action')">Action</span>
+      <span data-puzzle onclick="filterCategory('puzzle')">Puzzle</span>
+      <span data-racing onclick="filterCategory('racing')">Racing</span>
+      <span data-strategy onclick="filterCategory('strategy')">Strategy</span>
+      <!-- <span data-sports onclick="filterCategory('action')">Sports</span> -->
+      <span data-retro onclick="filterCategory('retro')">Retro</span>
+      <span data-adventure onclick="filterCategory('adventure')">Adventure</span>
     </div>
   </section>
 
   <section id="games" class="container">
-    <h2>Featured Games</h2>
+    <h2 id="games-heading">Featured Games</h2>
     <div class="grid">
 
-      <article class="card">
+      <article class="card" data-strategy>
         <img src="https://img.itch.zone/aW1nLzE0OTYwNzEwLnBuZw==/315x250%23c/YyJlkq.png" />
         <div class="d-flex justify-between align-center">
           <h3>Hex Sweeper</h3>
@@ -53,7 +59,7 @@
         <p>The classic Minesweeper, but now on a hexagonal grid.</p>
       </article>
 
-      <article class="card">
+      <article class="card" data-action data-retro>
         <img src="https://img.itch.zone/aW1nLzE0NzU5NTU3LnBuZw==/315x250%23c/4LasY4.png" />
         <div class="d-flex justify-between align-center">
           <h3>Space War</h3>
@@ -62,27 +68,27 @@
         <p>The classic "Spacewar!" space shooter game.</p>
       </article>
 
-      <article class="card" style="min-height: 350px;"></article>
-      <article class="card" style="min-height: 350px;"></article>
-      <article class="card" style="min-height: 350px;"></article>
-      <article class="card" style="min-height: 350px;"></article>
-      <article class="card" style="min-height: 350px;"></article>
-      <article class="card" style="min-height: 350px;"></article>
-      <article class="card" style="min-height: 350px;"></article>
-      <article class="card" style="min-height: 350px;"></article>
-      <article class="card" style="min-height: 350px;"></article>
-      <article class="card" style="min-height: 350px;"></article>
-      <article class="card" style="min-height: 350px;"></article>
-      <article class="card" style="min-height: 350px;"></article>
-      <article class="card" style="min-height: 350px;"></article>
-      <article class="card" style="min-height: 350px;"></article>
+      <article class="card" style="min-height: 350px;" data-action data-strategy data-retro data-puzzle data-racing data-adventure></article>
+      <article class="card" style="min-height: 350px;" data-action data-strategy data-retro data-puzzle data-racing data-adventure></article>
+      <article class="card" style="min-height: 350px;" data-action data-strategy data-retro data-puzzle data-racing data-adventure></article>
+      <article class="card" style="min-height: 350px;" data-action data-strategy data-retro data-puzzle data-racing data-adventure></article>
+      <article class="card" style="min-height: 350px;" data-action data-strategy data-retro data-puzzle data-racing data-adventure></article>
+      <article class="card" style="min-height: 350px;" data-action data-strategy data-retro data-puzzle data-racing data-adventure></article>
+      <article class="card" style="min-height: 350px;" data-action data-strategy data-retro data-puzzle data-racing data-adventure></article>
+      <article class="card" style="min-height: 350px;" data-action data-strategy data-retro data-puzzle data-racing data-adventure></article>
+      <article class="card" style="min-height: 350px;" data-action data-strategy data-retro data-puzzle data-racing data-adventure></article>
+      <article class="card" style="min-height: 350px;" data-action data-strategy data-retro data-puzzle data-racing data-adventure></article>
+      <article class="card" style="min-height: 350px;" data-action data-strategy data-retro data-puzzle data-racing data-adventure></article>
+      <article class="card" style="min-height: 350px;" data-action data-strategy data-retro data-puzzle data-racing data-adventure></article>
+      <article class="card" style="min-height: 350px;" data-action data-strategy data-retro data-puzzle data-racing data-adventure></article>
+      <article class="card" style="min-height: 350px;" data-action data-strategy data-retro data-puzzle data-racing data-adventure></article>
 
     </div>
   </section>
 
   <footer class="container footer">
-    <div class="ad-box small">Footer Ad Space</div>
-    <p>© 2026 ArcadeHub</p>
+    <div class="ad-box small"></div>
+    <p>© 2026 HMI Studios</p>
   </footer>
 </body>
 
