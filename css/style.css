@@ -1,0 +1,135 @@
+@import "layout.css";
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #111;
+    color: #eee
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: auto
+}
+
+header {
+    background: #1b1b1b;
+    position: sticky;
+    top: 0
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0
+}
+
+nav a,
+a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+nav a.selected {
+    border-bottom: 2px solid #fff;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    padding: 2rem 0
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem
+}
+
+.card,
+.ad-box {
+    background: #1d1d1d;
+    padding: 1rem;
+    border-radius: 14px
+}
+
+.card img:first-child {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: .5rem;
+    background: #fff;
+    color: #111;
+    padding: .6rem 1rem;
+    border-radius: 8px
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem
+}
+
+.chips span {
+    background: #222;
+    padding: .5rem .9rem;
+    border-radius: 999px
+}
+
+.game-frame iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: 0;
+    border-radius: 14px;
+    background: #000
+}
+
+.below-game {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem
+}
+
+.ad-box {
+    border: 1px dashed #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px
+}
+
+.small {
+    min-height: 80px
+}
+
+.tall {
+    min-height: 300px
+}
+
+.footer {
+    padding: 2rem 0
+}
+
+@media(max-width:768px) {
+
+    .hero,
+    .below-game {
+        grid-template-columns: 1fr
+    }
+
+    nav {
+        display: none
+    }
+}
