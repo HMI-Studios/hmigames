@@ -114,6 +114,7 @@ nav a.selected {
     align-items: center;
     justify-content: center;
     min-height: 120px;
+    display: none;
 }
 
 .small {

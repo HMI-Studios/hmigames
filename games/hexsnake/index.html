@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hex Sweeper - HMI Games</title>
+  <title>Hex Snake - HMI Games</title>
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/x-icon" href="icon.ico">
   <meta name="google-adsense-account" content="ca-pub-1123279002704511">
@@ -24,7 +24,7 @@
 
   <main class="container">
     <div class="d-flex justify-between align-end">
-      <h2>Hex Sweeper</h2>
+      <h2>Hex Snake</h2>
       <p>
         <a onclick="document.querySelector('#game').requestFullscreen()">⛶ Fullscreen</a>
       </p>
@@ -37,13 +37,9 @@
     <div class="below-game">
       <div>
         <p>
-          Godot implementation of the classic "Spacewar!" space shooter game. It can be played either against another player on the same computer, or against a simple bot player.<br>
+          Snake, but on a hex grid (because hexagons are the bestagons).<br>
           <h3>Instructions</h3>
-          Player 1 and vs. AI controls:<br>
-          W to move forward, A & D to turn, S to shoot.<br>
-          <br>
-          Player 2 controls:<br>
-          I to move forward, J & L to turn, K to shoot.
+          Left and right arrow keys to steer. Eat as many apples as possible while avoiding the skulls, and don't crash into yourself!
         </p>
       </div>
       <aside class="ad-box tall">
