@@ -22,9 +22,10 @@ function filterCategory(category) {
 
     document.querySelector(`#categories .chips span[data-${category}`).classList.add('selected');
     gamesHeading.textContent = `${categories[category]} Games`;
+    currentCategory = category;
   } else {
     allGames.forEach(game => game.classList.remove('d-none'));
     gamesHeading.textContent = 'Featured Games';
+    currentCategory = null;
   }
-  currentCategory = category;
 }
